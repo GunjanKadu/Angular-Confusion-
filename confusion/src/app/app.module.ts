@@ -2,6 +2,8 @@ import "hammerjs";
 
 import { DishService } from "./services/dish.service";
 import { PromotionService } from "./services/promotion.service";
+import { LeaderService } from "./services/leader.service";
+
 import { AppComponent } from "./app.component";
 import { MenuComponent } from "./menu/menu.component";
 import { DishDetailComponent } from "./dish-detail/dish-detail.component";
@@ -43,7 +45,7 @@ import { AppRoutingModule } from "./app-routing/app-routing.module";
     MatCardModule,
     MatButtonModule
   ],
-  providers: [DishService, PromotionService],
+  providers: [DishService, PromotionService, LeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
